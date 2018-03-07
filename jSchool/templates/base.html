@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>{% block title %} UNC Interactive Media {% endblock %}</title>
+  <meta name="description" content="Learning Django">
+
+    <!-- Bootstrap -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-1">
+              {% block content %}
+              {% endblock %}
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
